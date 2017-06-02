@@ -8,22 +8,22 @@ If you do this you can clone this template and develop your Openfire Plugin in a
 
 1) Apply this patch to your Openfire source code and start using this template to develop your Plugin.
 
+    https://github.com/jwerba/OpenfirePluginTemplate/blob/master/load%20plugins%20in%20classapath.patch
+2) Edit your Openfire project and add this new project to the classpath
 
-https://github.com/jwerba/OpenfirePluginTemplate/blob/master/load%20plugins%20in%20classapath.patch
+3) Code, debug, run Openfire and watch how your plugin is loaded. Place a breakpoint in your Plugin code and watch how you can debug it when you run your Openfire code.
+    
+4) Package the Plugin for deployment
 
-2) Develop your Plugin
+    Create a maven run configuration with the following goals:
+    package assembly:single
 
-3) Package the Plugin for deployment
-
-Create a maven run configuration with the following goals:
-package assembly:single
-
-The result will be a .jar with the structure that Openfire expects for a Plugin
-- plugin.xml
-- any other files inside src\main\resources
-- lib\
-    - jar dependencies
-    - plugin jar
+    The result will be a .jar with the structure that Openfire expects for a Plugin
+    - plugin.xml
+    - any other files inside src\main\resources
+    - lib\
+        - jar dependencies
+        - plugin jar
 
 
-Copy this artifact inside your Openfire \plugins folder and watch how it is unzipped and detected by Openfire!
+5) Copy this artifact (the result of the previous item) inside your Openfire \plugins folder as any other plugin and watch how it is unzipped and detected by Openfire!
