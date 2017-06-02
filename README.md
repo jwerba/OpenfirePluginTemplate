@@ -18,7 +18,7 @@ https://github.com/jwerba/OpenfirePluginTemplate/blob/master/load%20plugins%20in
 Create a maven run configuration with the following goals:
 package assembly:single
 
-The result will be a .jar with the structure that Openfire expects of a Plugin
+The result will be a .jar with the structure that Openfire expects for a Plugin
 - plugin.xml
 - any other files inside src\main\resources
 - lib\
@@ -26,3 +26,4 @@ The result will be a .jar with the structure that Openfire expects of a Plugin
     - plugin jar
 
 
+Copy this artifact inside your Openfire \plugins folder and watch how it is unzipped and detected by Openfire!
