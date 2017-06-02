@@ -6,3 +6,7 @@ Now you can have in your IDE workspace the Openfire project and another project 
 
 If you do this you can clone this template and develop your Openfire Plugin in a more organized way.
 
+Apply this patch to your Openfire source code and start using this template to develop your Plugin.
+
+
+[[https://github.com/jwerba/OpenfirePluginTemplate/blob/master/load%20plugins%20in%20classapath.patch|alt=the openfire patch]]
